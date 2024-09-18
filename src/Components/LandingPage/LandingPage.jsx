@@ -23,7 +23,9 @@ const LandingPage = () => {
           cutting-edge solutions and forward-thinking strategies, we empower
           businesses to thrive in an ever-evolving digital landscape
         </p>
-        <button className="cta-button">Book a Call</button>
+        <a href="#contact" className="cta-button">
+          Book a Call
+        </a>
       </div>
       <div className="hero-image">
         <img src={img1} alt="Software Startup" />

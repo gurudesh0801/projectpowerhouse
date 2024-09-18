@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>Contact Us</h3>
           <p>
-            <strong>Email:</strong> com.projectpowerhouse.com
+            <strong>Email:</strong> com.projectpowerhouse@gmail.com
           </p>
           <p>
             <strong>Phone:</strong> +91 8788098130 / 8668494090
