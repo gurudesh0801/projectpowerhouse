@@ -1,0 +1,145 @@
+/* src/components/Testimonials.css */
+
+.testimonials-section-alt {
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.container-alt {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-title-alt {
+  font-size: 2.5rem;
+  color: #34495e;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.testimonials-description-alt {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 40px;
+}
+
+.testimonial-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-card-alt {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.testimonial-card-alt.active {
+  display: block;
+  opacity: 1;
+}
+
+.testimonial-content-fade {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.testimonial-image-alt {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  border: 4px solid #3498db;
+  object-fit: cover;
+}
+
+.testimonial-text-alt {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-quote-alt {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.testimonial-name-alt {
+  font-size: 1.4rem;
+  color: #3498db;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.testimonial-title-alt {
+  font-size: 1rem;
+  color: #95a5a6;
+}
+
+.prev-slide,
+.next-slide {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #3498db;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev-slide {
+  left: 10px;
+}
+
+.next-slide {
+  right: 10px;
+}
+
+.prev-slide:hover,
+.next-slide:hover {
+  color: #1abc9c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .testimonial-image-alt {
+    width: 100px;
+    height: 100px;
+  }
+
+  .testimonial-text-alt {
+    padding: 15px;
+  }
+
+  .testimonial-quote-alt {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-name-alt {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-title-alt {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,124 @@
+/* src/components/Services.css */
+
+.services-section-alt {
+  padding: 80px 5%;
+  background-color: #bcc0c4;
+}
+
+.container-alt {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-title-alt {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.services-description-alt {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-grid-alt {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.service-card-alt {
+  background-color: #ffffff; /* Light background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease,
+    background-color 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.service-card-alt:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.service-icon-alt {
+  font-size: 3rem;
+  color: #e67e22; /* Orange color for icons */
+  margin-bottom: 15px;
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.service-card-alt:hover .service-icon-alt {
+  color: #e67e22; /* Darker orange on hover */
+  transform: rotate(360deg); /* Rotate icon on hover */
+}
+
+.service-title-alt {
+  font-size: 1.6rem;
+  color: #34495e;
+  margin: 20px 0 10px;
+  font-weight: 600;
+}
+
+.service-description-alt {
+  font-size: 1rem;
+  color: #7f8c8d;
+  transition: color 0.4s ease;
+}
+
+.service-card-alt:hover .service-description-alt {
+  color: #34495e;
+}
+
+/* Add a subtle background animation */
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #f0f4f8;
+  }
+  50% {
+    background-color: #f9f9f9;
+  }
+  100% {
+    background-color: #f0f4f8;
+  }
+}
+
+.services-section-alt {
+  animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-grid-alt {
+    grid-template-columns: 1fr; /* Stacks in 1 column on tablets */
+  }
+
+  .service-card-alt {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-title-alt {
+    font-size: 2.2rem;
+  }
+
+  .services-description-alt {
+    font-size: 1rem;
+  }
+
+  .service-title-alt {
+    font-size: 1.4rem;
+  }
+}
