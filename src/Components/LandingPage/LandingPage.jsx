@@ -2,7 +2,15 @@
 import React from "react";
 import "./LandingPage.css";
 import img1 from "../../assets/images/img1.webp";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaPython,
+  FaFigma,
+} from "react-icons/fa";
+import { SiAdobephotoshop } from "react-icons/si";
 
 const LandingPage = () => {
   return (
@@ -14,6 +22,8 @@ const LandingPage = () => {
         <FaJs className="icon" />
         <FaReact className="icon" />
         <FaPython className="icon" />
+        <SiAdobephotoshop className="icon" />
+        <FaFigma className="icon" />
       </div>
 
       <div className="hero-content">
