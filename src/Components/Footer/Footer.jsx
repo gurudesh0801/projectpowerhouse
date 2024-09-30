@@ -49,7 +49,7 @@ const Footer = () => {
             <strong>Phone:</strong> +91 8788098130 / 8668494090
           </p>
           <p>
-            <strong>Address:</strong> 123 Startup Blvd, Tech City, CA 12345
+            <strong>Address:</strong> ProjectPowerhouse, Lane no A20, Raikar Nagar, Dhayari, Pune - 411041
           </p>
         </div>
 
