@@ -23,7 +23,8 @@ const Contact = () => {
           <div className="contact-info">
             <h2 className="contact-info-title">Contact Information</h2>
             <p>
-              <strong>Address:</strong> 123 Startup Blvd, Tech City, CA 12345
+              <strong>Address:</strong> ProjectPowerhouse, Lane no A20, Raikar
+              Nagar, Dhayari, Pune - 411041
             </p>
             <p>
               <strong>Email:</strong> com.projectpowerhouse@gmail.com
