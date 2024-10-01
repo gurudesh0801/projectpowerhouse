@@ -85,126 +85,77 @@
   display: flex;
   float: left;
   position: absolute; /* Make it absolute to place it behind content */
-  top: 30%;
-  left: 50%;
+  top: 80%;
+  left: 65%;
   transform: translate(-50%, -50%); /* Center the orbit */
-  width: 500px;
-  height: 400px;
+  width: 500px; /* Adjust the width and height for your circular area */
+  height: 500px;
   z-index: 0; /* Lower z-index to push it behind */
   pointer-events: none; /* Prevent interactions */
   opacity: 0.2; /* Make it subtle */
 }
 
-/* Each icon now has its own orbit animation */
+/* Each icon now has its own circular motion animation */
 .icon {
   position: absolute;
-  font-size: 4rem;
-  color: #000000;
+  font-size: 3.5rem; /* Adjust icon size as needed */
+  color: #ffffff;
   padding: 10px;
-  box-shadow: none;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for scaling and shadow */
 }
 
-/* Icon 1 orbit */
+/* Circular motion for each icon */
 .icon:nth-child(1) {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: rotate1 10s infinite linear;
+  animation: circularMotion 8s infinite ease-in-out; /* Longer duration for smoother motion */
 }
 
-/* Icon 2 orbit */
 .icon:nth-child(2) {
-  top: 50%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  animation: rotate2 12s infinite linear;
+  animation: circularMotion 7s infinite ease-in-out;
 }
 
-/* Icon 3 orbit */
 .icon:nth-child(3) {
-  top: 100%;
-  left: 50%;
-  transform: translate(50%, 100%);
-  animation: rotate3 14s infinite linear;
+  animation: circularMotion 6s infinite ease-in-out;
 }
 
-/* Icon 4 orbit */
 .icon:nth-child(4) {
-  top: 50%;
-  left: 0%;
-  transform: translate(50%, -50%);
-  animation: rotate4 16s infinite linear;
+  animation: circularMotion 5s infinite ease-in-out;
 }
 
-/* Icon 5 orbit */
 .icon:nth-child(5) {
-  top: 20%;
-  left: 20%;
-  animation: rotate5 18s infinite linear;
+  animation: circularMotion 4s infinite ease-in-out;
 }
 .icon:nth-child(6) {
-  top: 40%;
-  left: 20%;
-  animation: rotate5 18s infinite linear;
+  animation: circularMotion 3.5s infinite ease-in-out;
 }
 .icon:nth-child(7) {
-  top: 70%;
-  left: 20%;
-  animation: rotate5 18s infinite linear;
+  animation: circularMotion 3s infinite ease-in-out;
 }
 
-/* Separate Orbit Animations */
-@keyframes rotate1 {
+/* Circular motion animation */
+@keyframes circularMotion {
   0% {
-    transform: rotate(0deg) translateX(150px) rotate(0deg);
+    transform: rotate(0deg) translate(200px) rotate(0deg); /* Adjust translate value for radius */
+  }
+  25% {
+    transform: rotate(90deg) translate(200px) rotate(-90deg); /* Rotate 90 degrees */
+  }
+  50% {
+    transform: rotate(180deg) translate(200px) rotate(-180deg); /* Rotate 180 degrees */
+  }
+  75% {
+    transform: rotate(270deg) translate(200px) rotate(-270deg); /* Rotate 270 degrees */
   }
   100% {
-    transform: rotate(360deg) translateX(150px) rotate(-360deg);
-  }
-}
-
-@keyframes rotate2 {
-  0% {
-    transform: rotate(0deg) translateX(200px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translateX(200px) rotate(-360deg);
-  }
-}
-
-@keyframes rotate3 {
-  0% {
-    transform: rotate(0deg) translateX(250px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translateX(250px) rotate(-360deg);
-  }
-}
-
-@keyframes rotate4 {
-  0% {
-    transform: rotate(0deg) translateX(180px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translateX(180px) rotate(-360deg);
-  }
-}
-
-@keyframes rotate5 {
-  0% {
-    transform: rotate(0deg) translateX(220px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translateX(220px) rotate(-360deg);
+    transform: rotate(360deg) translate(200px) rotate(-360deg); /* Complete circle */
   }
 }
 
 /* Hover effect on icons */
 .icon:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-  color: #000;
-  transform: scale(1.1); /* Scale on hover */
+  opacity: 1;
+  transform: scale(1.2); /* Scale on hover */
 }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
