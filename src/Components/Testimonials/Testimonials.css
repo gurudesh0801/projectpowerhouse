@@ -1,7 +1,6 @@
 /* src/components/Testimonials.css */
 
 .testimonials-section-alt {
-  background-color: #f7f7f7;
   color: #333;
   padding: 80px 10%;
   text-align: center;
@@ -14,14 +13,14 @@
 
 .testimonials-title-alt {
   font-size: 2.5rem;
-  color: #34495e;
+  color: #f0f0f0;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .testimonials-description-alt {
   font-size: 1.2rem;
-  color: #7f8c8d;
+  color: #dddada;
   margin-bottom: 40px;
 }
 
@@ -71,7 +70,7 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background: #ffffff;
+  background: #acacac;
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -79,20 +78,20 @@
 .testimonial-quote-alt {
   font-size: 1.2rem;
   font-style: italic;
-  color: #2c3e50;
+  color: #49494a;
   margin-bottom: 10px;
 }
 
 .testimonial-name-alt {
   font-size: 1.4rem;
-  color: #3498db;
+  color: #a7288b;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .testimonial-title-alt {
   font-size: 1rem;
-  color: #95a5a6;
+  color: #081415;
 }
 
 .prev-slide,
