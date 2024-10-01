@@ -1,7 +1,7 @@
 /* General Navbar Styling */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
   background: rgba(0, 57, 92, 0.617);
