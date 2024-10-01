@@ -140,12 +140,12 @@
 .icon:nth-child(6) {
   top: 40%;
   left: 10%;
-  animation: rotate5 18s infinite linear;
+  animation: rotate6 18s infinite linear;
 }
 .icon:nth-child(7) {
   top: 70%;
   left: 16%;
-  animation: rotate5 18s infinite linear;
+  animation: rotate7 18s infinite linear;
 }
 
 /* Separate Orbit Animations */
@@ -193,7 +193,21 @@
     transform: rotate(360deg) translateX(220px) rotate(-360deg);
   }
 }
-
+@keyframes rotate6 {
+  0% {
+    transform: rotate(0deg) translateX(160px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(220px) rotate(-360deg);
+  }
+}@keyframes rotate7 {
+  0% {
+    transform: rotate(0deg) translateX(250px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(220px) rotate(-360deg);
+  }
+}
 /* Hover effect on icons */
 .icon:hover {
   background-color: rgba(255, 255, 255, 0.6);
