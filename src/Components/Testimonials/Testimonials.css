@@ -4,6 +4,8 @@
   color: #333;
   padding: 80px 10%;
   text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/images/about-img.png") center/cover no-repeat;
 }
 
 .container-alt {
