@@ -38,6 +38,8 @@
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  min-width: 280px; /* Ensure minimum width for smaller devices */
+  max-width: 500px; /* Set a max width for larger devices */
 }
 
 .contact-info-title {
@@ -113,12 +115,47 @@ textarea:focus {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: 60px 5%; /* Adjust padding for medium screens */
+  }
+
+  .contact-title {
+    font-size: 2rem; /* Slightly smaller title */
+  }
+
+  .contact-description {
+    font-size: 1.1rem; /* Slightly smaller description */
+  }
+}
+
 @media (max-width: 768px) {
   .contact-content {
-    flex-direction: column;
+    flex-direction: column; /* Stack columns on smaller screens */
+    align-items: center; /* Center items */
   }
 
   .social-icons {
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.8rem; /* Further reduce title size */
+  }
+
+  .contact-description {
+    font-size: 1rem; /* Further reduce description size */
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 15px; /* Reduce padding for smaller devices */
+    font-size: 0.7rem;
+  }
+
+  .submit-btn {
+    padding: 10px; /* Adjust button padding */
   }
 }
