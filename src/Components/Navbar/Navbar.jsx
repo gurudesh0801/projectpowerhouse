@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../../assets/images/pplogo.png";
+import logo from "../../assets/images/pplogo2.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +14,6 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="logo">
           <img src={logo} alt="" />
-          Project Powerhouse
         </div>
         <div className={`menu ${isOpen ? "active" : ""}`}>
           <a href="#landingpage" className="nav-link">
@@ -36,7 +35,6 @@ const Navbar = () => {
           <span className="bar"></span>
         </div>
       </nav>
-      <hr />
     </>
   );
 };
