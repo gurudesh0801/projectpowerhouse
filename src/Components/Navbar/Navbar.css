@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  background: rgba(0, 57, 92, 0.617);
+  background: #dad4d4e3;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -14,14 +14,14 @@
 .logo {
   display: flex;
   align-items: center;
-  color: #ecf0f1;
+  color: #000000;
   font-size: 24px;
   font-weight: bold;
   transition: transform 0.3s ease;
 }
 
 .logo img {
-  width: 50px; /* Adjust the logo size */
+  width: 7rem; /* Adjust the logo size */
   margin-right: 10px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .nav-link {
-  color: #ecf0f1;
+  color: #000000;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -74,7 +74,7 @@
 .hamburger .bar {
   width: 25px;
   height: 2px;
-  background-color: #ecf0f1;
+  background-color: #000000;
   transition: all 0.3s ease;
 }
 
@@ -83,7 +83,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 70px;
+  top: 100px;
   left: 0;
   width: 100%;
   background-color: #2c3e50;
@@ -97,6 +97,7 @@
   display: block;
   opacity: 0;
   animation: fadeIn 0.5s forwards;
+  color: aliceblue;
 }
 
 .menu.active .nav-link:nth-child(1) {
