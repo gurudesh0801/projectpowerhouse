@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: url(./assets/images/bg.jpg);
+  background: #dad4d4;
   background-size: cover;
   background-repeat: no-repeat;
 }
