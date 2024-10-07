@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import aboutImage from "../../assets/images/about-img.png"; // Make sure to replace with your image path
+import aboutImage from "../../assets/images/bgimg5.png"; // Make sure to replace with your image path
 
 const About = () => {
   return (
